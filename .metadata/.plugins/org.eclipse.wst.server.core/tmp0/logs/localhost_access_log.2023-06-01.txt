@@ -39,3 +39,14 @@
 0:0:0:0:0:0:0:1 - - [01/Jun/2023:12:17:12 +0900] "GET /jsp_study/ch07/forwardRedirect.jsp HTTP/1.1" 200 452
 0:0:0:0:0:0:0:1 - - [01/Jun/2023:12:17:31 +0900] "POST /jsp_study/ch07/response_sendRedirect.jsp HTTP/1.1" 302 -
 0:0:0:0:0:0:0:1 - - [01/Jun/2023:12:17:31 +0900] "GET /jsp_study/ch07/page_control_end.jsp HTTP/1.1" 200 188
+127.0.0.1 - - [01/Jun/2023:12:55:13 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:12:55:14 +0900] "GET /jsp_study/ch07/calcform.html HTTP/1.1" 200 852
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:12:55:19 +0900] "POST /jsp_study/ch07/calc.jsp HTTP/1.1" 200 499
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:13:08:11 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 292
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:13:16:19 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 620
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:13:18:02 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 832
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:14:47:36 +0900] "GET /jsp_study/ch07/include_data.jsp HTTP/1.1" 200 135
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:14:52:35 +0900] "GET /jsp_study/ch07/include_data.jsp HTTP/1.1" 200 135
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:14:53:10 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 294
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:15:07:33 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 357
+0:0:0:0:0:0:0:1 - - [01/Jun/2023:15:14:23 +0900] "GET /jsp_study/ch07/include.jsp HTTP/1.1" 200 357
