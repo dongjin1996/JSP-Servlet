@@ -1266,3 +1266,4 @@
 2023-06-02 17:35:13,722 [Worker-141: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-06-02 17:35:13,723 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\EZEN-28\eclipse-workspace\JSP\jsp_study\src\main\resources
 2023-06-02 17:35:13,724 [Worker-141: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-06-02 17:35:13,725 [Worker-141: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\EZEN-28\eclipse-workspace\JSP\jsp_study\src\test\resources
