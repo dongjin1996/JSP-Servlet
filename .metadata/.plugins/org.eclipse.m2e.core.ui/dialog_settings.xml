@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\EZEN-28\Desktop\board-main"/>
+			<item value="C:\Users\EZEN-28\Desktop\studentInfo-main"/>
+			<item value="C:\Users\EZEN-28\eclipse-workspace\JSP\cookie-session"/>
 			<item value="C:\Users\EZEN-28\eclipse-workspace\JSP\source\jwbook"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -12,5 +15,24 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="board"/>
+			<item value="jsp_study"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="board"/>
+			<item value="jsp_study"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>

@@ -3,4 +3,5 @@
   <module moduleId="org.eclipse.jst.jee.server:test" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:jwbook" serverId="jwbook"/>
   <module moduleId="org.eclipse.jst.jee.server:jsp_study" serverId="jsp_study"/>
+  <module moduleId="org.eclipse.jst.jee.server:board" serverId="board"/>
 </modules>

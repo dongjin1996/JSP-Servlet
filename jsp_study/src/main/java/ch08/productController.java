@@ -41,7 +41,7 @@ public class productController extends HttpServlet {
 		String view = "";
 		
 		//action이 null이면 
-		//http://localhost:8081/jsp_study/pcontrol?action=list 주소로 foward
+		//http://localhost:8081/jsp_study/pcontrol?action=list 주소로 forward
 		if(action == null) {
 			getServletContext()
 			.getRequestDispatcher("/pcontrol?action=list")

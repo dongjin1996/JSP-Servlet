@@ -3,6 +3,10 @@ C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.co
 \jwbook\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2125816207.index
 \jsp_study\src\main\java
+C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3882650937.index
+\board\src\main\java
+C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4291293734.index
+\studentInfo2\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3357323055.index
 \jwbook\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1188382694.index
@@ -25,5 +29,7 @@ C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.co
 \cookie-session\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1487123134.index
 \jwbook\src\main\java
+C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\530780893.index
+\board2\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1143344243.index
 \test\src\main\java
