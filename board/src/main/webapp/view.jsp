@@ -10,6 +10,44 @@
 <link rel="stylesheet" href="./css/style.css" />   <!-- css -->
 </head>
 <body>
-
+	 <div class="board_wrap">
+      <div class="board_title">
+        <strong>자유게시판</strong>
+        <p>자유게시판 입니다.</p>
+      </div>
+      <div class="board_view_wrap">
+        <div class="board_view">
+          <div class="title">${board.title}</div>
+          <div class="info" style="position:relative;">
+            <dl>
+              <dt>번호${board.board_no}</dt>
+              <dd></dd>
+            </dl>
+            <dl>
+              <dt>글쓴이 ${board.user_id}</dt>
+              <dd></dd>
+            </dl>
+            <dl>
+              <dt>작성일</dt>
+              <dd>${board.reg_date}</dd>
+            </dl>
+            <dl>
+              <dt>조회</dt>
+              <dd>${board.views}</dd>
+            </dl>
+            <dl style="position:absolute; right:0;">
+              <dt><a onclick="chkDelete(${board.board_no}); return false;">삭제하기</a></dt>
+            </dl>
+          </div>
+          <div class="cont" style="white-space:pre-wrap;">${board.content }</div>
+          <div class="cont"><img src="${board.img}" alt="업로드 이미지"></div>
+        </div>
+        <div class="bt_wrap">
+          <a href="list" class="on">목록</a>
+          <a href="edit?board_no=${board.board_no}">수정</a>
+        </div>
+      </div>
+    </div>
+        <script type="text/javascript" src="./script.js"></script> <!-- 자바스크립트 -->
 </body>
 </html>
