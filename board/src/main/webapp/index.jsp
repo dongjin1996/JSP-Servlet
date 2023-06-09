@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="./css/style.css" />   <!-- css -->
 </head>
 <body>
-	<c:if test="${boardList == null }">
+	<c:if test="${boardList == null && error == null}">
 		<!-- 페이지 이동을 하지만 주소는 바뀌지 않는다. -->
 		<jsp:forward page="list"/>
 	</c:if>
@@ -56,5 +56,13 @@
         <a href="#" class="bt last">&gt;&gt;</a>
       </div>
     </div>
+    <script>
+    	<c:if test="${param.error != null}">
+    		alert("${param.error}");
+    	</c:if>
+    	<c:if test="${error != null}">
+			alert("${error}");
+		</c:if>
+    </script>
 </body>
 </html>

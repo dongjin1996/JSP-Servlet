@@ -23,7 +23,7 @@ public class BoardDAO {
 	}
 	
 	//게시판 리스트 가져오는 메소드
-	public ArrayList<Board> getList() throws SQLException {
+	public ArrayList<Board> getList() throws Exception {
 		Connection conn = open();
 		
 		//Board 객체를 저장할 ArrayList
@@ -53,7 +53,7 @@ public class BoardDAO {
 	}
 	
 	//게시물 내용 가져오기
-	public Board getView(int board_no) throws SQLException {
+	public Board getView(int board_no) throws Exception {
 		Connection conn = open();
 		Board b = new Board();
 		
@@ -78,7 +78,7 @@ public class BoardDAO {
 	}
 	
 	//조회수 증가하는 메소드
-	public void updateViews(int board_no) throws SQLException {
+	public void updateViews(int board_no) throws Exception {
 		Connection conn = open();
 		String sql = "update board set views = (views + 1) where board_no = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
@@ -91,7 +91,7 @@ public class BoardDAO {
 	}
 	
 	//게시글 등록
-	public void insertBoard(Board b) throws SQLException {
+	public void insertBoard(Board b) throws Exception {
 		Connection conn = open();
 		String sql = "insert into board(board_no, user_id, title, content, reg_date, views, img) values(board_seq.nextval, ?, ?, ?, sysdate, 0, ?)";
 		
@@ -107,7 +107,7 @@ public class BoardDAO {
 	}
 	
 	//게시글 수정화면 보여주기
-	public Board getViewForEdit(int board_no) throws SQLException {
+	public Board getViewForEdit(int board_no) throws Exception {
 		Connection conn = open();
 		Board b = new Board();
 		

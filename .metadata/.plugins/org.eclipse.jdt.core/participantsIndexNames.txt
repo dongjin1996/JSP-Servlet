@@ -9,6 +9,8 @@ C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.co
 \studentInfo2\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3357323055.index
 \jwbook\src\main\java
+C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3637488677.index
+\news\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1188382694.index
 \jwbook\src\main\java
 C:\Users\EZEN-28\eclipse-workspace\JSP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\799310376.index
