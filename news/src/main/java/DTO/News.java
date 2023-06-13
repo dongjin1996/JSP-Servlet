@@ -7,7 +7,7 @@ public class News {
 	private String reg_date; //올린 날짜
 	private int views; //조회수
 	private String content; //내용
-	private String img; //이미지경로+ 이미지명
+	private String img; //이미지경로 + 이미지명
 	
 	//getter, setter 
 	

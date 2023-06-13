@@ -1,6 +1,6 @@
-@charset "UTF-8";
+ @charset "UTF-8";
 
-/*	초기화 태그  */
+	초기화 태그 
 
 * {
 	margin: 0;
@@ -17,12 +17,170 @@ li {
 }
 
 a {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: inherit;
 	cursor: pointer;
+	color: black !important;
 }
+
+/*	공통	*/
+
+
+
+.bt_wrap {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 0;
+}
+
+.bt_wrap a {
+	display: inline-block;
+	min-width: 80px;
+	margin-left: 10px;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 2px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.bt_wrap a:hover {
+	background: #000;
+	color: #fff;
+}
+
+.bt_wrap a.on {
+	background: #000;
+	color: #fff;
+}
+
+/* list */
 
 .wrap {
 	width: 1000px;
 	margin: 0 auto;
+}
+
+.news_list {
+	width: 100%;
+	border-top: 1px solid #444444;
+	border-collapse: collapse;
+	font-size: 1.7rem;
+	caption-side: top !important;
+}
+
+.news_list caption {
+	padding: 30px;
+
+}
+
+.news_list th,
+.news_list td {
+	border-bottom: 1px solid #444444;
+	padding: 10px;
+	text-align: center;
+}
+
+.news_list td.title > a:hover {
+	text-decoration: underline;
+}
+
+.bt_list {
+  text-align: right !important;
+}
+
+.btn-secondary {
+	font-size: 15px !important;
+}
+
+.news_page {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+
+/* view.html, write.html*/
+
+.news_wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.news_title {
+	margin: 30px 10px;
+}
+
+.news_title strong {
+	font-size: 3rem;
+}
+
+.news_title p {
+	margin-top: 5px;
+	font-size: 1.4rem;
+}
+
+/* view.html */
+
+.news_view {
+	width: 100%;
+	border-top: 2px solid #000;
+}
+
+.news_view .title {
+	padding: 20px 15px;
+	border-bottom: 1px dashed #ddd;
+}
+
+.news_view .info {
+	padding: 15px;
+	border-bottom: 1px solid #999;
+	font-size: 0;
+}
+
+.news_view .info dl {
+	position: relative;
+	display: inline-block;
+	padding: 0 20px;
+}
+
+.news_view .info dl:first-child{
+	padding-left: 0;
+}
+
+.news_view .info dl::before{
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 0;
+	display: block;
+	width: 1px;
+	height: 13px;
+	background: #ddd;
+}
+
+.news_view .info dl:first-child::before {
+	display: none;
+}
+
+.news_view .info dl dt,
+.news_view .info dl dd {
+	display: inline-block;
+	font-size: 1.4rem;
+}
+
+.news_view .info dl dd {
+	margin-left: 10px;
+	color: #777;
+}
+
+.news_view .cont {
+	padding: 15px;
+	border-bottom: 1px solid #000;
+	line-height: 160%;
+	font-size: 1.4rem;
+}
+
+.bt_lits {
+	text-align: right;
 }
