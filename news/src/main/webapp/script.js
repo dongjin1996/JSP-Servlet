@@ -17,3 +17,14 @@ function chkForm() {
 	}
 	f.submit();
 }
+
+function chkDelete(news_no) {
+	const result = confirm("삭제하시겠습니까?");
+	
+	if(result) {
+		const url = location.origin;
+		location.href = url + "/news/delete?news_no=" + news_no;
+	}else {
+		false;
+	}
+}

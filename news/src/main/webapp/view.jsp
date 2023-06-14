@@ -48,9 +48,18 @@
 			</div>
 			<div class="bt_wrap">
 				<a href="list" class="on">목록</a>
-				<a href="edit?board_no=${news.news_no }">수정</a>
+				<a href="edit?news_no=${news.news_no }">수정</a>
 			</div>
 		</div>
 	</div>
+	<script>
+		<c:if test="${param.error != null}">
+			alert("${parm.error}");
+		</c:if>
+		<c:if test ="${error != null}">
+			alert("${error}");
+		</c:if>
+	</script>
+	<script type="text/javascript" src="./script.js"></script> <!-- 자바스크립트 -->
 </body>
 </html>

@@ -108,7 +108,7 @@ public class NewsDAO {
 		Connection conn = open();
 		News n = new News();
 		
-		String sql = "select news_no, title, user_id, content, to_char(reg_date, 'yyyy.mm.dd') reg_date, views, img from news where news_no = ?;";
+		String sql = "select news_no, title, user_id, content, to_char(reg_date, 'yyyy.mm.dd') reg_date, views, img from news where news_no = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setInt(1, news_no);
 		ResultSet rs = pstmt.executeQuery();
@@ -132,8 +132,7 @@ public class NewsDAO {
 	//게시글 수정하기
 	public void updateNews(News n) throws Exception {
 		Connection conn = open();
-		String sql = "update news set user_id = ?, title = ?, content = ?, img = ? " 
-				+ "where news_no = ?";
+		String sql = "update news set user_id = ?, title = ?, content = ?, img = ? where news_no = ?";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		try(conn; pstmt) {
@@ -150,7 +149,20 @@ public class NewsDAO {
 		}
 	}
 	
-
+	//게시글 삭제
+	public void deleteNews(int news_no) throws Exception {
+		Connection conn = open();
+		String sql = "delete from news where news_no = ?";
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		
+		try(conn; pstmt) {
+			pstmt.setInt(1, news_no);
+			
+			if(pstmt.executeUpdate() != 1) {
+				throw new Exception("삭제된 글이 없습니다.");
+			}
+		}
+	}
 	
 	
 }

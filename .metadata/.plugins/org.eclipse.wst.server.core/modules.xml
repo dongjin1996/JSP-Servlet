@@ -4,5 +4,6 @@
   <module moduleId="org.eclipse.jst.jee.server:jwbook" serverId="jwbook"/>
   <module moduleId="org.eclipse.jst.jee.server:jsp_study" serverId="jsp_study"/>
   <module moduleId="org.eclipse.jst.jee.server:board" serverId="board"/>
+  <module moduleId="org.eclipse.jst.jee.server:news2" serverId="news2"/>
   <module moduleId="org.eclipse.jst.jee.server:news" serverId="news"/>
 </modules>

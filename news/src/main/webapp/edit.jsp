@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="news_wrap">
-		<div>
+		<div class="news_title">
 		<strong>뉴스게시판</strong>
 		<p>수정중입니다.</p>
 		</div>

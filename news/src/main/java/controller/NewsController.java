@@ -43,7 +43,7 @@ public class NewsController extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8"); //한글깨짐 방지
-		String command = request.getServletPath(); //경고를 가지고 온다.
+		String command = request.getServletPath(); //경로를 가지고 온다.
 		String site = null;
 		
 		System.out.println("command: " + command);
@@ -52,10 +52,11 @@ public class NewsController extends HttpServlet {
 		switch (command) {
 		case "/list" : site = getList(request); break;
 		case "/view" : site = getView(request); break;
-		case "/write": site = "write.jsp"; break;
-		case "/insert": site = insertNews(request); break;
-		case "/edit" : site = getViewforEdit(request); break;
+		case "/write" : site = "write.jsp"; break;
+		case "/insert" : site = insertNews(request); break;
+		case "/edit" : site = getViewForEdit(request); break;
 		case "/update" : site = updateNews(request); break;
+		case "/delete" : site = deleteNews(request); break;
 		}
 		
 		if(site.startsWith("redirect:/")) { //redirect
@@ -134,7 +135,7 @@ public class NewsController extends HttpServlet {
 	}
 	
 	//게시글 수정 보여주는 메소드
-	public String getViewforEdit(HttpServletRequest request) {
+	public String getViewForEdit(HttpServletRequest request) {
 		int news_no = Integer.parseInt(request.getParameter("news_no"));
 		
 		try {
@@ -178,8 +179,32 @@ public class NewsController extends HttpServlet {
 			}
 		} 
 		
-		return "redirect:/view?board_no=" + n.getNews_no();
+		return "redirect:/view?news_no=" + n.getNews_no();
 	}
+	
+	//게시글 삭제 메소드
+	
+	public String deleteNews(HttpServletRequest request) {
+		int news_no = Integer.parseInt(request.getParameter("news_no"));
+		
+		try {
+			dao.deleteNews(news_no);
+		} catch (Exception e) {
+			e.printStackTrace();
+			ctx.log("게시글을 삭제과정에서 문제 발생");
+			
+			try {
+				String encodeName = URLEncoder.encode("게시글이 정상적으로 삭제되지 않았습니다.", "UTF-8");
+				return "redirect:/list?error=" + encodeName ;
+			} catch (UnsupportedEncodingException e1) {
+				e1.printStackTrace();
+			}
+		}
+		
+		return "redirect:/list";
+	}
+		
+	
 	
 	//파일 이름 추출
 	private String getFilename(Part part) {

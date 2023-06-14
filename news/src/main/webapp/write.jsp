@@ -11,12 +11,12 @@
 </head>
 <body>
 	<div class="news_wrap">
-		<div>
+		<div class="news_title">
 		<strong>뉴스게시판</strong>
 		</div>
 		<div class="news_write_wrap">
 		<form name="frm" method="post" action="insert" enctype="multipart/form-data">
-			<div class="board_write">
+			<div class="news_write">
 				<div class="title">
 					<dl>
 					<dt>제목</dt>

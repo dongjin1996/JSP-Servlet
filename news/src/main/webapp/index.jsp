@@ -19,7 +19,7 @@
 <!--부트 스트랩 -->
 </head>
 <body>
-	<c:if test="${newsList == null}">
+	<c:if test="${newsList == null && error == null}">
 		<jsp:forward page="list" />
 	</c:if>
 	<div class="wrap">
@@ -68,5 +68,13 @@
 		</nav>
 		</div>
 	</div>
+		<script>
+		<c:if test="${param.error != null}">
+			alert("${parm.error}");
+		</c:if>
+		<c:if test ="${error != null}">
+			alert("${error}");
+		</c:if>
+	</script>
 </body>
 </html>
